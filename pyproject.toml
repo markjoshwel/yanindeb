@@ -5,6 +5,9 @@ description = "y(et )an(other )in(teractive )de(velopment )b(log)"
 authors = ["Mark Joshwel <mark@joshwel.co>"]
 license = "Unlicense"
 readme = "README.md"
+packages = [
+    {include = "yanindeb.py", from = "src"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -13,6 +16,8 @@ mypy = "^1.6.1"
 marko = "^2.0.1"
 isort = "^5.12.0"
 
+[tool.poetry.scripts]
+yanindeb = 'yanindeb:main'
 
 [build-system]
 requires = ["poetry-core"]
