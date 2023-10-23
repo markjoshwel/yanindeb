@@ -4,6 +4,8 @@
 
 —says the module announcement. So… hello there?
 
+---
+
 It’s Week 2 at time of writing, so this is just my retrospective on Week 1’s class.  
 Week 1 was pretty fun I guess, definitely did not expect to see 97 slides though
 
