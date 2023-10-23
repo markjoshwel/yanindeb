@@ -6,6 +6,72 @@ semantic use of html/css
 
 also an exercise in creating a markdown-to-html generator for a near-future project
 
+- [project/website structure](#projectwebsite-structure)
+- [developing](#developing)
+  - [workflow](#workflow)
+    - [prototyping with tailwind](#prototyping-with-tailwind)
+    - [updating content](#updating-content)
+    - [updating templates](#updating-templates)
+    - [publishing](#publishing)
+- [licence](#licence)
+  - [third-party open source licences](#third-party-open-source-licences)
+
+## project/website structure
+
+```text
+.
+├── public/
+│   └── ...
+├── public/
+│   ├── font/
+│   │   └──
+│   ├── media/
+│   │   └── ...
+│   ├── style.css
+│   ├── index.html
+│   └── ...
+├── src/
+│   └── tooling.py
+├── devbox.json
+├── pyproject.toml
+└── README.md
+```
+
+- [posts/](posts/)  
+  where the markdown files used to generate blog pages are stored
+
+  - \*.md  
+    the markdown files used to generate blog pages, named after their respective week
+    numbers
+
+- [public/](public/)  
+  where the website is stored
+
+  - [font/](public/font/)  
+    where the fonts used by the website are stored
+
+  - [media/](public/media/)  
+    where the media used by the website are stored
+    where the media used by the website are stored
+
+  - [style.css](public/style.css)  
+    the stylesheet used by the website
+
+  - [style.giscus.css](public/style.giscus.css)  
+    the stylesheet used by the giscus comment widget
+
+  - [index.html](public/index.html)  
+    the main page of the website, is the latest blog post
+
+  - \*.html  
+    the older blog posts of the website, named after their respective week numbers
+
+- [src/](src/)  
+   where the website tooling and tailwind css stylesheet is stored
+
+  - [tooling.py](src/tooling.py)  
+    the tooling script used to generate blog pages from markdown files in [posts/](posts/)
+
 ## developing
 
 yanindeb is developed using:
@@ -122,7 +188,7 @@ marked by the [Unlicence](https://unlicense.org/).
 
 yanindeb uses the following third-party open source fonts:
 
-1. [DT Nightingale by Death of Typography & Celia Yew](https://deathoftypography.com/nightingale/)  
+1. [DT Nightingale by Death of Typography & Celia Yew](https://deathoftypography.com/nightingale/)
 
    this is a really cool font from a local (singaporean) type foundry, it’s great and if
    you’re another student taking a look around yanindeb or just someone who may want a few
