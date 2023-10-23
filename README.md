@@ -31,7 +31,7 @@ also an exercise in creating a markdown-to-html generator for a near-future proj
 │   ├── index.html
 │   └── ...
 ├── src/
-│   └── tooling.py
+│   └── yanindeb.py
 ├── devbox.json
 ├── pyproject.toml
 └── README.md
@@ -51,8 +51,7 @@ also an exercise in creating a markdown-to-html generator for a near-future proj
     where the fonts used by the website are stored
 
   - [media/](public/media/)  
-    where the media used by the website are stored
-    where the media used by the website are stored
+    where media used by the website are stored
 
   - [style.css](public/style.css)  
     the stylesheet used by the website
@@ -67,9 +66,9 @@ also an exercise in creating a markdown-to-html generator for a near-future proj
     the older blog posts of the website, named after their respective week numbers
 
 - [src/](src/)  
-   where the website tooling and tailwind css stylesheet is stored
+   where the website tooling and tailwindcss stylesheet is stored
 
-  - [tooling.py](src/tooling.py)  
+  - [yanindeb.py](src/yanindeb.py)  
     the tooling script used to generate blog pages from markdown files in [posts/](posts/)
 
 ## developing
@@ -133,7 +132,7 @@ there are a few workflows for developing/maintaining yanindeb:
 
 1. edit the markdown files in `./posts/`
 
-2. in the repository root, run:
+2. run:
 
    ```shell
    poetry run yanindeb
