@@ -8,7 +8,7 @@ also an exercise in creating a markdown-to-html generator for a near-future proj
 
 - [project/website structure](#projectwebsite-structure)
 - [developing](#developing)
-  - [workflow](#workflow)
+  - [workflows](#workflows)
     - [prototyping with tailwind](#prototyping-with-tailwind)
     - [updating content](#updating-content)
     - [updating templates](#updating-templates)
@@ -102,7 +102,7 @@ if you have devbox, run the following to quickly hop into a development environm
 devbox shell
 ```
 
-### workflow
+### workflows
 
 there are a few workflows for developing/maintaining yanindeb:
 
