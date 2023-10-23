@@ -245,13 +245,19 @@ yanindeb uses the following third-party open source fonts:
 
    the font is licensed under the [SIL Open Font License v1.1](public/font/nightingale.OFL-1.1).
 
-2. Opening Hours Sans by Opening Hours Studio
+2. BDO Grotesk by Lokal Container
 
-   ([website](https://openinghours.studio/), [repository](https://github.com/opening-hours-studio/opening-hours-sans))
+   ([website](https://lokalcontainer.com/), [repository](https://github.com/Lokal-Container/BDO-Grotesk))
 
-   the font is licensed under the [SIL Open Font License v1.1](public/font/openinghours_sans.OFL-1.1.md).
+   the font is licensed under the [SIL Open Font License v1.1](public/font/BDOGrotesk-OFL-1.1.txt).
 
-3. Material Symbols by Google
+3. 0xProto by 0xType
+
+   ([website](https://0xtype.dev/), [repository](https://github.com/0xType/0xProto))
+
+   the font is licensed under the [SIL Open Font License v1.1](public/font/0xProto.OFL-1.1.txt).
+
+4. Material Symbols by Google
 
    ([website](https://fonts.google.com/icons), [repository](https://github.com/google/material-design-icons))
 

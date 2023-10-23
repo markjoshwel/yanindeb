@@ -35,7 +35,6 @@ from subprocess import run
 from sys import stderr
 from typing import Final, NamedTuple
 
-import bs4  # type: ignore
 import marko
 
 # constants
