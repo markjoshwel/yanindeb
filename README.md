@@ -84,6 +84,9 @@ yanindeb is developed using:
     - [tailwindcss](https://tailwindcss.com/) (`>=4.0.0`)  
       css framework for rapid prototyping (css is handwritten afterwards)
 
+      - [prettier](https://prettier.io/))  
+        html formatter
+
   - [python](http://python.org/) (`>=3.10`)  
     programming language for website tooling
 
@@ -94,7 +97,8 @@ yanindeb is developed using:
         markdown parser
 
 a prototyping environment will require tailwind to be available on your system.  
-else, having python and poetry is the minimum requirement to run website tooling.
+else, **having python, poetry and prettier are the minimum prerequisites** to run the
+tooling script.
 
 if you have devbox, run the following to quickly hop into a development environment:
 
@@ -138,6 +142,11 @@ there are a few workflows for developing/maintaining yanindeb:
    poetry run yanindeb
    ```
 
+   > [!NOTE]  
+   > this will run prettier, so ensure you have it installed and available on your system!  
+   > yanindeb will assume you have bun and thus bunx, but you can specify npx by using
+   > `YANCMD=npx yanindeb` instead.
+
    heed and fix any errors raised before proceeding.
 
 3. et voilà, you can now view the updated content in `./public/`. happy updating!
@@ -148,21 +157,62 @@ edit the html file in `./src/template.html`
 
 the following placeholders are used:
 
-- head placeholder
+- head placeholders
 
-  used to insert any inline styles
+  - title placeholder
+
+    used to insert the title of the page
+
+    ```html
+    <!-- title placeholder -->
+    ```
+
+  - meta tag placeholder
+
+    used to insert the title and description meta tags
+
+    ```html
+    <!-- meta placeholder -->
+    ```
+
+  - stylesheet override placeholder
+
+    used to insert any overriding stylesheets, such as for defining
+    a custom colour palette
+
+    ```html
+    <!-- style placeholder -->
+    ```
+
+- banner placeholder
 
   ```html
-  <!-- head placeholder -->
+  <!-- banner placeholder -->
   ```
 
-- page navigation
+  is replaced with
 
   ```html
-  <!-- navigation placeholder -->
+  <span>y</span>et
+  <span>an</span>other
+  <span>in</span>teractive
+  <span>de</span>velopment
+  <span>b</span>log
   ```
 
-- content
+  (this is done seperately due to formatting issues)
+
+- page navigation placeholder
+
+  used to insert generated page navigation links as list elements
+
+  ```html
+  <!-- navli placeholder -->
+  ```
+
+- content placeholder
+
+  used to insert generated content inside a `<main>` element
 
   ```html
   <!-- content placeholder -->
