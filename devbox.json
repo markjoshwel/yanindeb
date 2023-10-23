@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "bun@latest",
+    "python@latest",
+    "poetry@latest"
+  ]
+}
