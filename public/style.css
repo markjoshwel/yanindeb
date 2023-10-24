@@ -45,25 +45,25 @@ h6 {
   font-family: "0xProto";
   font-style: normal;
   font-display: swap;
-  src: url("/font/0xProto.woff2") format("woff2");
+  src: url("./font/0xProto.woff2") format("woff2");
 }
 @font-face {
   font-family: "DT Nightingale";
   font-style: normal;
   font-display: swap;
-  src: url("/font/Nightingale.woff2") format("woff2");
-}
-@font-face {
-  font-family: "BDO Grotesk";
-  font-style: oblique;
-  font-display: swap;
-  src: url("/font/BDOGrotesk-Bold.woff2") format("woff2");
+  src: url("./font/Nightingale.woff2") format("woff2");
 }
 @font-face {
   font-family: "BDO Grotesk";
   font-style: normal;
-  font-display: swap;
-  src: url("/font/BDOGrotesk-Regular.woff2") format("woff2");
+  font-display: fallback;
+  src: url("./font/BDOGrotesk-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "BDO Grotesk";
+  font-style: oblique;
+  font-display: fallback;
+  src: url("./font/BDOGrotesk-DemiBold.woff2") format("woff2");
 }
 
 /* colours */
