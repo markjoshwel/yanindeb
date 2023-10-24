@@ -83,10 +83,12 @@ h6 {
 }
 
 /* typography */
-* i, * em {
+* i,
+* em {
   font-style: italic;
 }
-* b, * strong {
+* b,
+* strong {
   font-weight: bold;
   font-weight: 600;
 }
@@ -104,7 +106,7 @@ h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -135,6 +137,15 @@ code {
 body {
   font-family: "BDO Grotesk", sans-serif;
   background-color: var(--colour-neutral);
+
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: minmax(0, 35%) auto;
 }
 
 /* header: navbar */
@@ -147,7 +158,15 @@ main > * {
   margin-top: 1rem;
 }
 
+main > header {
+  margin-top: 0.5rem !important;
+}
+
 /* footer */
+footer {
+  grid-row: 2;
+  grid-column: 2/3;
+}
 
 footer > * {
   margin-top: 0.85rem;
@@ -162,3 +181,6 @@ footer > hr {
   font-size: 0.8rem;
   font-weight: 400;
 }
+
+/* tailwind prototyping */
+
