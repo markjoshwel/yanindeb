@@ -66,6 +66,21 @@ h6 {
     url("./font/BDOGrotesk-VF.woff2") format("woff2-variations");
 }
 
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Material Symbols Outlined";
+    font-style: normal;
+    src:
+      url("./font/MaterialSymbolsSharp.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "BDO Grotesk";
+    font-style: normal;
+    src: url("./font/BDOGrotesk-VF.woff2") format("woff2");
+  }
+}
+
 /* colours */
 :root {
   --colour-main: #544069;
