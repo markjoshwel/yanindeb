@@ -43,3 +43,10 @@ so after thinking for a bit without prevail, i just used a sata andagi recipe
 
 ok that’s it thanks for reading my first actual blog post on the interwebs  
 p.s., can you tell i’m not really a writer?
+
+---
+
+<span class="material-symbols-outlined">&#xE8B6;</span>
+<span class="material-symbols-outlined">&#xE88A;</span>
+<span class="material-symbols-outlined">&#xE8B8;</span>
+<span class="material-symbols-outlined">&#xE87D;</span>

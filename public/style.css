@@ -40,25 +40,7 @@ h6 {
 /*  yanindeb stylesheet
     https://github.com/markjoshwel/yanindeb (public domain)  */
 
-@supports (font-variation-settings: normal) {
-  @font-face {
-    font-family: "Material Symbols Outlined";
-    font-style: normal;
-    font-display: swap;
-    src:
-      url("/font/MaterialSymbolsSharp.woff2")
-        format("woff2 supports variations"),
-      url("/font/MaterialSymbolsSharp.woff2") format("woff2-variations");
-  }
-}
-@supports not (font-variation-settings: normal) {
-  @font-face {
-    font-family: "Material Symbols Outlined";
-    font-style: normal;
-    font-display: fallback;
-    src: url("/font/MaterialSymbolsSharp.woff2") format("woff2");
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 @font-face {
   font-family: "0xProto";
   font-style: normal;
@@ -71,23 +53,17 @@ h6 {
   font-display: swap;
   src: url("/font/Nightingale.woff2") format("woff2");
 }
-@supports (font-variation-settings: normal) {
-  @font-face {
-    font-family: "BDO Grotesk";
-    font-style: normal;
-    font-display: swap;
-    src:
-      url("/font/BDOGrotesk-VF.woff2") format("woff2 supports variations"),
-      url("/font/BDOGrotesk-VF.woff2") format("woff2-variations");
-  }
+@font-face {
+  font-family: "BDO Grotesk";
+  font-style: oblique;
+  font-display: swap;
+  src: url("/font/BDOGrotesk-Bold.woff2") format("woff2");
 }
-@supports not (font-variation-settings: normal) {
-  @font-face {
-    font-family: "BDO Grotesk";
-    font-style: normal;
-    font-display: swap;
-    src: url("/font/BDOGrotesk-VF.woff2") format("woff2");
-  }
+@font-face {
+  font-family: "BDO Grotesk";
+  font-style: normal;
+  font-display: swap;
+  src: url("/font/BDOGrotesk-Regular.woff2") format("woff2");
 }
 
 /* colours */
