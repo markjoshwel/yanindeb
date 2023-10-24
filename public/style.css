@@ -40,30 +40,35 @@ h6 {
 /*  yanindeb stylesheet
     https://github.com/markjoshwel/yanindeb (public domain)  */
 
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 @font-face {
   font-family: "0xProto";
   font-style: normal;
-  font-display: swap;
   src: url("./font/0xProto.woff2") format("woff2");
 }
 @font-face {
   font-family: "DT Nightingale";
   font-style: normal;
-  font-display: swap;
   src: url("./font/Nightingale.woff2") format("woff2");
 }
-@font-face {
-  font-family: "BDO Grotesk";
-  font-style: normal;
-  font-display: fallback;
-  src: url("./font/BDOGrotesk-Regular.woff2") format("woff2");
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "BDO Grotesk";
+    font-style: normal;
+    src: url("./font/BDOGrotesk-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "BDO Grotesk";
+    font-style: oblique;
+    src: url("./font/BDOGrotesk-DemiBold.woff2") format("woff2");
+  }
 }
-@font-face {
-  font-family: "BDO Grotesk";
-  font-style: oblique;
-  font-display: fallback;
-  src: url("./font/BDOGrotesk-DemiBold.woff2") format("woff2");
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "BDO Grotesk";
+    src:
+      url("./font/BDOGrotesk-VF.woff2") format("woff2 supports variations"),
+      url("./font/BDOGrotesk-VF.woff2") format("woff2-variations");
+  }
 }
 
 /* colours */
@@ -78,6 +83,13 @@ h6 {
 }
 
 /* typography */
+* i, * em {
+  font-style: italic;
+}
+* b, * strong {
+  font-weight: bold;
+  font-weight: 600;
+}
 h1,
 h2,
 h3,

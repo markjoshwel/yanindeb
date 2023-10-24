@@ -13,7 +13,7 @@ I did know about most of the HTML tags presented, but I shan’t say more consid
 I `<div>`-ed my way through [my first few websites](https://markjoshwel.github.io/portfolio-eae/).
 
 mb but can you really blame me? it worked (and that’s all that mattered then!)  
-psst: i’ll talk more about semantics in my mandatory blogging of Week 2
+_psst: i’ll talk more about semantics in my mandatory blogging of Week 2_
 
 ---
 
@@ -39,7 +39,7 @@ also nobody told me it didn’t have to be real recipe
 so after thinking for a bit without prevail, i just used a sata andagi recipe
 
 …definitely not because azumanga daioh was plaguing my mind at the time
-(whaaat? nooo, you’re crazy)
+_(whaaat? nooo, you’re crazy)_
 
 ok that’s it thanks for reading my first actual blog post on the interwebs  
-p.s., can you tell i’m not really a writer?
+p.s., **can you tell i’m not really a writer?**
