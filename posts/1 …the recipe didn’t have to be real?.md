@@ -9,6 +9,8 @@
 It’s Week 2 at time of writing, so this is just my retrospective on Week 1’s class.  
 Week 1 was pretty fun I guess, definitely did not expect to see 97 slides though
 
+![Picture of a frustrated Chiyo-chan from Azumanga Daioh, with the caption "She thought school was for one day only! She MAD!!"](https://files.catbox.moe/pc8jkg.jpg)
+
 I did know about most of the HTML tags presented, but I shan’t say more considering
 I `<div>`-ed my way through [my first few websites](https://markjoshwel.github.io/portfolio-eae/).
 
