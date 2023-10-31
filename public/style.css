@@ -77,9 +77,9 @@ h6 {
   --colour-tertiary: #e7e6a4;
   --colour-neutral: #f9fcea;
 
-  --colour-text: #000000;
-  --colour-text-alt: #f6ecbe;
-  --colour-text-hover: var(--colour-main);
+  --colour-light-text: #fffbff;
+  --colour-light-text-alt: #f6ecbe;
+  --colour-light-text-hover: #eadfea;
 }
 
 /* typography */
@@ -92,7 +92,9 @@ h6 {
   font-weight: bold;
   font-weight: 600;
 }
-h1,
+h1 {
+  font-family: "DT Nightingale", serif;
+}
 h2,
 h3,
 h4,
@@ -125,12 +127,29 @@ a:hover {
 }
 code {
   font-family: "0xProto", monospace;
-  background-color: var(--colour-text-alt);
+  background-color: #222222;
+  color: var(--colour-light-text);
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   border-radius: 0.25rem;
+}
+pre > code {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  border-radius: 0rem;
+}
+pre {
+  background-color: #222222;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-radius: 0.25rem;
+  overflow: acroll;
 }
 
 /* body: grid layout */
@@ -138,49 +157,71 @@ body {
   font-family: "BDO Grotesk", sans-serif;
   background-color: var(--colour-neutral);
 
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: minmax(0, 35%) auto;
+  grid-template-columns: 21rem auto;
 }
 
-/* header: navbar */
+body > * {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  list-style-position: inside;
+}
+
+/* header */
+body > header,
+footer {
+  background-color: var(--colour-main);
+  color: var(--colour-neutral);
+}
 header span {
-  color: var(--colour-main);
+  color: var(--colour-light-text-alt);
 }
 
-/* main */
-main > * {
-  margin-top: 1rem;
+/* header navbar */
+header nav ul {
+  list-style: none; /* This removes the bullet points */
 }
-
-main > header {
-  margin-top: 0.5rem !important;
+header nav li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+header a:hover,
+footer a:hover {
+  background-color: var(--colour-main);
+  color: var(--colour-tertiary);
 }
 
 /* footer */
 footer {
   grid-row: 2;
-  grid-column: 2/3;
 }
 
-footer > * {
+footer * {
   margin-top: 0.85rem;
 }
 
-footer > hr {
+footer hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  border: 1px solid var(--colour-light-text);
 }
 
-.footer-fonts {
-  font-size: 0.8rem;
-  font-weight: 400;
+footer .footer-fonts {
+  font-size: 0.85rem;
+  font-color: #ffffff !important;
+  font-weight: 200;
 }
 
-/* tailwind prototyping */
+/* main */
+main > header {
+  margin-bottom: 2rem;
+}
 
+main > section > * {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
