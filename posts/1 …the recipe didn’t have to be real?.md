@@ -31,8 +31,7 @@ The “star CA” of the week was the recipe card, where
 Considering I had an inkling of CSS knowledge, I also (very much unnecessarily) styled
 it a bit because my inner designer was like a devil on my shoulder during the CA.
 
-I imported a Google Font and (attempted to) pretty up the text and layout.
-
+I imported a Google Font and (attempted to) pretty up the text and layout.  
 (don’t mind the weird top padding, it was a bodge anyways)
 
 ---

@@ -159,7 +159,7 @@ body {
 
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: 21rem auto;
+  grid-template-columns: 20.5rem auto;
 }
 
 body > * {
@@ -183,7 +183,7 @@ header span {
 
 /* header navbar */
 header nav ul {
-  list-style: none; /* This removes the bullet points */
+  list-style: none;
 }
 header nav li {
   padding-top: 0.25rem;
@@ -200,14 +200,15 @@ footer {
   grid-row: 2;
 }
 
-footer * {
+footer > * {
   margin-top: 0.85rem;
 }
 
 footer hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  border: 1px solid var(--colour-light-text);
+  color: var(--colour-text-light);
+  background-color: var(--colour-text-light);
 }
 
 footer .footer-fonts {

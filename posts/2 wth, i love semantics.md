@@ -18,18 +18,15 @@ first and foremost. :D
 ---
 
 This week also dove a bit into CSS and Typography, which are things I’ve also had a
-hand at before, so I’m not too worried about those.
+hand at before, so I’m not too worried about those.  
+Nothing too fancy with this week’s CAs, just your usual.
 
 Note to self: the typographic element diagram is a little funny; Apertures are the
-openings between an Open Counter and the outside of a letterform!
-
+openings between an Open Counter and the outside of a letterform!  
 Also: counters can be “open counters”, like in the letters ‘c’, ‘f’, ‘h’ and ‘s’;
 or “closed counters”, like in the letters ‘a’, ‘b’, ‘d’, ‘e’, ‘g’, ‘o’, ‘p’, and ‘q’.
 
-tbh i still mix up margin and padding to this day
-
-Nothing too fancy with this week’s CAs, just your usual.
-
+tbh i still mix up margin and padding to this day  
 and i know the slides say not to rely solely on w3schools, but their
 [CSS selector reference](https://www.w3schools.com/cssref/css_selectors.php) is pretty
 good (￣ω￣;)
