@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Week 04</title>
-    <meta name="title" content="Week 04" />
-    <meta name="description" content="whuh?" />
+    <title>Week 05</title>
+    <meta name="title" content="Week 05" />
+    <meta name="description" content="viva la webassembly" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- style placeholder -->
@@ -24,25 +24,31 @@
       <nav>
         <ul>
           <li>
-            <a href="/">
+            <a href="./">
+              <b>Week 05</b><br />
+              viva la webassembly
+            </a>
+          </li>
+          <li>
+            <a href="./4">
               <b>Week 04</b><br />
               whuh?
             </a>
           </li>
           <li>
-            <a href="/3">
+            <a href="./3">
               <b>Week 03</b><br />
               additional challenges: to do or not to do?
             </a>
           </li>
           <li>
-            <a href="/2">
+            <a href="./2">
               <b>Week 02</b><br />
               wth, i love semantics
             </a>
           </li>
           <li>
-            <a href="/1">
+            <a href="./1">
               <b>Week 01</b><br />
               …the recipe didn’t have to be real?
             </a>
@@ -53,55 +59,388 @@
 
     <main>
       <header>
-        <h2>whuh?</h2>
-        <p>Week 04</p>
+        <h2>viva la webassembly</h2>
+        <p>Week 05</p>
       </header>
       <section id="s1">
-        <p>i’m so sorry mr donovan i was really tired this week</p>
         <p>
-          <img src="https://files.catbox.moe/jd8xsr.jpg" alt="yotsuba koiwai" />
+          First and foremost, as per the CA, proof-of-completion screenshots:
         </p>
-        <p>something something flexbox idk</p>
+        <p>
+          Before anything, father, I have a confession to make, I am just
+          watching the course on 2x and just skimming through it.
+        </p>
+        <p>
+          Fret not, I (think I) have enough experience with other programming
+          languages like Python, Zig and Rust to help me fill in the stop gaps.
+          Even if I didn't know any other lang other than Python I think I would
+          still be fine.
+        </p>
+        <p>
+          Also, I hate JavaScript. To think our infrastructure is built on this.
+          Thankfully TypeScript exists, but I don't think it's good enough of a
+          solution. Viva la WebAssembly.
+        </p>
       </section>
       <section id="s2">
-        <p>
-          do we REALLY have to use Adobe XD?<br />
-          We’ve learnt Figma last semester for Design Principles and now we have
-          to use what is basically an older version of it??
-        </p>
+        <p>Anyways, in JavaScript:</p>
+        <ul>
+          <li>
+            <p>Everything is an object (for better or for worse)</p>
+          </li>
+          <li>
+            <p>Multiple variable assignment is cool</p>
+          </li>
+          <li>
+            <p>The idea of a <code>Number</code> type is weird</p>
+          </li>
+          <li>
+            <p>
+              Mutability is nice<br />
+              (python only has type annotations, and ~technically~ everything is
+              mutable, while virtually most other langs have some form of
+              mutability)
+            </p>
+          </li>
+          <li>
+            <p>
+              Objects are basically JSON but first-class (i wonder what JSON
+              stands for?)
+            </p>
+            <p>
+              Indexing them and accessing via a property both works which is
+              neat if not standard in scripting languages
+            </p>
+          </li>
+          <li>
+            <p>CamelCaseCamelCaseCamelCase</p>
+          </li>
+          <li>
+            <p>
+              Arrays are objects that are basically Python lists<br />
+              ...and deleting will create an empty item
+            </p>
+          </li>
+          <li>
+            <p>
+              Multiline strings with <code>\</code> is weird but ok<br />
+              Python and especially Zig win on how to do multiline strings
+            </p>
+          </li>
+          <li>
+            <p>
+              Comments are like comments in languages where it doesn't start
+              with a <code>#</code> or after an <code>;</code><br />
+              ...so <code>/* block comments */</code> exist (and i like em)
+            </p>
+            <p>
+              also seeing comments included in objects in the REPL is actually
+              cool, why python don't do same :(
+            </p>
+          </li>
+          <li>
+            <p>
+              I have always and still hated RegEx-es, cool to see as a
+              first-class feature of the language but feels gimmicky<br />
+              (but it does make complete sense for a web-first language)
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>==</code> and <code>===</code> is different because
+              ☆*:.｡.o(≧▽≦)o.｡.:*☆
+            </p>
+          </li>
+          <li>
+            <p>
+              Postfix single-increment and single-decrement operators exist
+              (<code>++</code> and <code>--</code>)
+            </p>
+          </li>
+          <li>
+            <p>
+              Operators!<br />
+              <code>&amp;&amp;</code> is and<br />
+              <code>||</code> is or<br />
+              <code>! </code> is not
+            </p>
+            <p>
+              (everything else is as you expect coming from python, except for
+              some python bitwise operators)
+            </p>
+            <p>
+              <strong>note:</strong> js bitwise operands operate on 32 bits even
+              though numbers are 64 bit floats/<code>f64</code><br />
+              (how fun!)
+            </p>
+          </li>
+          <li>
+            <p>
+              Truthy and falsy values exist!<br />
+              (aiyo)
+            </p>
+          </li>
+          <li>
+            <p>
+              Instantiate objects with <code>new object</code>, e.g.,
+              <code>new Map();</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              Type check with <code>typeof expression</code><br />
+              (analogous to <code>type()</code> in python or
+              <code>@typeOf</code> in zig)
+            </p>
+          </li>
+          <li>
+            <p>
+              NaN (not a number) exists as a first-class thing and is weird<br />
+              check with <code>Number.isNan()</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              You can check for properties using <code>.hasOwnProperty()</code
+              ><br />
+              kinda cool i wonder how many other langs have something like this
+              even if only determinable at compile time
+            </p>
+          </li>
+          <li>
+            <p>Sets are the same as Python sets</p>
+          </li>
+          <li>
+            <p>
+              Maps are (massive oversimplication!) objects that store key-value
+              pairs but:
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Object keys are strings or symbols<br />
+                  Map keys can be any data type
+                </p>
+              </li>
+              <li>
+                <p>Maps maintain insertion order</p>
+              </li>
+              <li>
+                <p>
+                  Maps have functions for key access and manipulation -
+                  <code>set()</code>, <code>get()</code>, <code>delete()</code>,
+                  <code>has()</code>, etc
+                </p>
+              </li>
+              <li>
+                <p>Maps have a <code>.size</code> property</p>
+              </li>
+              <li>
+                <p>
+                  Maps can be enumerated, yielding a
+                  <code>[key, value]</code> array<br />
+                  Enumerating through objects only return keys
+                </p>
+              </li>
+            </ul>
+            <p>
+              basically use them when order is important, analogous to
+              <code>OrderedDict</code> in Python
+            </p>
+          </li>
+          <li>
+            <p>
+              Functions are objects and can be passed to other functions (<a
+                href="https://en.wikipedia.org/wiki/First-class_function"
+                >first-class functions</a
+              >)
+            </p>
+            <p>(so what is a monad?)</p>
+          </li>
+          <li>
+            <p>Objects passed into functions are passed by references</p>
+            <p>
+              ...so either create a new object to return or
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy"
+                >shallow</a
+              >
+              or
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy"
+                >deep copy</a
+              >
+              the object
+            </p>
+          </li>
+          <li>
+            <p>
+              Functions do not have named arguments but can be given default
+              <em>positional</em> values
+            </p>
+          </li>
+          <li>
+            <p>
+              Functions are given an <code>arguments</code> array, similar to
+              <code>argv</code> for <code>main()</code> functions but without
+              needing to declare it as a argument
+            </p>
+            <p>Analogous to <code>def function(*arguments):</code> in Python</p>
+            <p>
+              However, you can write <code>*arguments</code> as
+              <code>...arguments</code> in JavaScript as the last argument
+            </p>
+          </li>
+        </ul>
       </section>
       <section id="s3">
-        <p>we’re learning about git i guess</p>
-        <p>
-          kinda wished they went more into git than about adobe xd; git is a
-          cruel monster underneath it’s cute smile
-        </p>
+        <p>Syntaxes:</p>
+        <ul>
+          <li>
+            <p>initialisation syntax</p>
+            <pre><code class="language-js">var   name;
+let   name;
+const name;
+</code></pre>
+            <p>
+              but why?<br />
+              <strong>note:</strong> results in undefined if given a value
+              before being used
+            </p>
+          </li>
+          <li>
+            <p>declaration syntax</p>
+            <pre><code class="language-js">var   name = expression ;  // function-scope; mutable (global if not in a func)
+let   name = expression ;  // block-scope   ; mutable
+const name = expression ;  // block-scope   ; immutable (cannot change aft decl)
+</code></pre>
+          </li>
+          <li>
+            <p>conditionals syntax</p>
+            <pre><code class="language-js">if (expression) {
+  // ...
+} else if {
+  // ...
+} else {
+  // ...
+}
+</code></pre>
+          </li>
+          <li>
+            <p>conditional if one-liner</p>
+            <pre><code class="language-js">if (condition) expressionTrue ;
+</code></pre>
+          </li>
+          <li>
+            <p>conditional ternary expression syntax (one-line if)</p>
+            <pre><code class="language-js">condition  ?  expressionTrue : expressionFalse ;
+</code></pre>
+          </li>
+          <li>
+            <p>switch syntax</p>
+            <pre><code class="language-js">switch (expression) {
+  case value:
+    // ...
+  default:
+    // ...
+}
+</code></pre>
+            <p><strong>note:</strong> break out of every case like C++</p>
+          </li>
+          <li>
+            <p>iteration syntax (for loop)</p>
+            <pre><code class="language-js">for ( init ; condition ; statement ) {
+  // ...
+}
+</code></pre>
+          </li>
+          <li>
+            <p>enumerative iteration syntax (for x in y loop)</p>
+            <pre><code class="language-js">for (declaration in iterable) {
+  // ...
+}
+</code></pre>
+            <p>
+              <strong>note:</strong> <code>declaration</code> here could be
+              <code>var i</code> etc
+            </p>
+          </li>
+          <li>
+            <p>
+              conditional iteration syntax - check first; do later (while loop)
+            </p>
+            <pre><code class="language-js">while (condition) {
+  // ...
+}
+</code></pre>
+          </li>
+          <li>
+            <p>
+              conditional interation syntax - do first; check after (while loop)
+            </p>
+            <pre><code class="language-js">do {
+  // ...
+} while (condition) ;
+</code></pre>
+            <p><strong>note</strong>: remember the trailing semicolon</p>
+          </li>
+          <li>
+            <p>function declaration syntax</p>
+            <pre><code class="language-js">function name([argument, ...]) {
+  // ...
+}
+</code></pre>
+          </li>
+          <li>
+            <p>function declaration syntax using function expressions</p>
+            <pre><code class="language-js">function([argument, ...]) {
+  // ...
+}
+</code></pre>
+            <p>
+              <strong>note:</strong> can be assigned to a variable or be used
+              anonymously
+            </p>
+          </li>
+          <li>
+            <p>function declaration syntax using an arrow function</p>
+            <pre><code class="language-js">([argument, ...]) =&gt; {
+  // ...
+}
+</code></pre>
+            <p>
+              <strong>note:</strong> can be assigned to a variable or be used
+              anonymously
+            </p>
+          </li>
+        </ul>
       </section>
       <section id="s4">
-        <p>and finally, markdown!</p>
-        <pre><code class="language-markdown"># h1
-## h2
-### h3
-
-body text
-still same paragraph
-
-this a different paragraph  
-break line with trailing double spaces
-
----
-
-that was a horizontal rule/separator!
-[this is a link](https://joshwel.co)
-![and this is an image](https://files.catbox.moe/jd8xsr.jpg)
-
-&gt; quotes
-
-- lists
-  1. sub lists
-  2. waow
-  3. :3
-</code></pre>
+        <p>...i am not touching promises, async and await just yet</p>
+        <p>
+          and yes i know i've used <code>arguments</code> interchangeably with
+          <code>parameters</code>, sue me
+        </p>
+        <p>
+          good chance i have oversimplified the language and i might look back
+          at this years into the future and just tense up in shame
+        </p>
+        <p>
+          ...but can you tell i don't like js? (you're telling me i need a guard
+          clause to check if an argument is an object? in an oop language?)
+        </p>
+        <p>
+          why must've java shape js instead of the functional language it
+          could've been :^)
+        </p>
+        <p>
+          viva la webassembly and the eventual, already progressing liberation
+          of the web!
+        </p>
+      </section>
+      <section id="s5">
+        <p>okay ciao</p>
+        <p><img src="" alt="a cute panel from yotsubato" /></p>
       </section>
     </main>
 

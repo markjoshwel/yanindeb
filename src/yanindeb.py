@@ -221,7 +221,7 @@ def main() -> None:
     for n, post in enumerate(targets):
         navli.append(
             NAVLI_TEMPLATE.format(
-                href="/" if (n == 0) else f"/{post.number}",
+                href="./" if (n == 0) else f"./{post.number}",
                 title=f"Week {post.number:>02}",
                 description=post.title,
             )
