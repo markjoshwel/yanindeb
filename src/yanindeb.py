@@ -258,21 +258,21 @@ def main() -> None:
             encoding="utf-8",
         )
 
-        # format
-        # post_html = bs4.BeautifulSoup(post_html, "html.parser").prettify(
-        #     # formatter=formatter
-        # )
-        format_args: list[str] = [
-            environ.get("YANCMD", "bunx"),
-            "prettier",
-            "--write",
-            "public",
-        ]
-        print(f"info: running format command '{' '.join(format_args)}'")
-        run(
-            args=format_args,
-            cwd=DIR_REPOSITORY_ROOT,
-        )
+    # format
+    # post_html = bs4.BeautifulSoup(post_html, "html.parser").prettify(
+    #     # formatter=formatter
+    # )
+    format_args: list[str] = [
+        environ.get("YANCMD", "bunx"),
+        "prettier",
+        "--write",
+        "public",
+    ]
+    print(f"info: running format command '{' '.join(format_args)}'")
+    run(
+        args=format_args,
+        cwd=DIR_REPOSITORY_ROOT,
+    )
 
 
 if __name__ == "__main__":
