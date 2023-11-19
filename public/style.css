@@ -160,7 +160,8 @@ main li {
   padding-bottom: 0.5rem;
 }
 
-main li ul, main li ol {
+main li ul,
+main li ol {
   padding-left: 1rem;
 }
 

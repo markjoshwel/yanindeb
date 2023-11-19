@@ -2,6 +2,15 @@
 
 First and foremost, as per the CA, proof-of-completion screenshots:
 
+![proof of completion of chapter 1](./assets/wk5-linkedin-proof-ch1.png)
+![proof of completion of chapter 2](./assets/wk5-linkedin-proof-ch2.png)
+![proof of completion of chapter 3](./assets/wk5-linkedin-proof-ch3.png)
+![proof of completion of chapter 4](./assets/wk5-linkedin-proof-ch4.png)
+![proof of completion of chapter 5](./assets/wk5-linkedin-proof-ch5.png)
+![proof of completion of chapter 6](./assets/wk5-linkedin-proof-ch6.png)
+
+---
+
 Before anything, father, I have a confession to make, I am just watching the course on 2x and just skimming through it.
 
 Fret not, I (think I) have enough experience with other programming languages like Python, Zig and Rust to help me fill in the stop gaps. Even if I didn't know any other lang other than Python I think I would still be fine.
