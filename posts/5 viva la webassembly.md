@@ -246,4 +246,4 @@ viva la webassembly and the eventual, already progressing liberation of the web!
 
 okay ciao
 
-![a cute panel from yotsubato]()
+![a cute panel from yotsubato](https://files.catbox.moe/c23rpe.jpg)
