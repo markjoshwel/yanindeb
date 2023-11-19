@@ -1,4 +1,4 @@
-# viva la webassembly
+# VIVA LA WEBASSEMBLY!
 
 First and foremost, as per the CA, proof-of-completion screenshots:
 
@@ -7,7 +7,7 @@ Before anything, father, I have a confession to make, I am just watching the cou
 Fret not, I (think I) have enough experience with other programming languages like Python, Zig and Rust to help me fill in the stop gaps. Even if I didn't know any other lang other than Python I think I would still be fine.
 
 Also, I hate JavaScript. To think our infrastructure is built on this. Thankfully TypeScript exists,
-but I don't think it's good enough of a solution. Viva la WebAssembly.
+but I don't think it's good enough of a solution. VIVA LA WEBASSEMBLY!
 
 ---
 

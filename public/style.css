@@ -152,6 +152,18 @@ pre {
   overflow: acroll;
 }
 
+/* lists */
+main li {
+  list-style-position: outside;
+  margin-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+main li ul, main li ol {
+  padding-left: 1rem;
+}
+
 /* body: grid layout */
 body {
   font-family: "BDO Grotesk", sans-serif;
