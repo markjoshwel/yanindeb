@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Week 06</title>
-    <meta name="title" content="Week 06" />
-    <meta name="description" content="addendums addendums addendums" />
+    <title>Week 07</title>
+    <meta name="title" content="Week 07" />
+    <meta name="description" content="...all hail the dom?" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- style placeholder -->
@@ -25,6 +25,12 @@
         <ul>
           <li>
             <a href="./">
+              <b>Week 07</b><br />
+              ...all hail the dom?
+            </a>
+          </li>
+          <li>
+            <a href="./6">
               <b>Week 06</b><br />
               addendums addendums addendums
             </a>
@@ -65,58 +71,33 @@
 
     <main>
       <header>
-        <h2>addendums addendums addendums</h2>
-        <p>Week 06</p>
+        <h2>…all hail the dom?</h2>
+        <p>Week 07</p>
       </header>
       <section id="s1">
+        <p>i did not expect this week to only have one activity, huh.</p>
         <p>
-          Turns out, I didn’t get everything I’ve noted down in Week 5’s post
-          correct.<br />
-          (what a surprise)
+          Anyways, DOM Manipulation! Cool stuff. Wonder how much of it
+          frameworks like React and the like abstract it away.
         </p>
-        <p>So here they are, as addendums to the previous post.</p>
-        <ul>
-          <li>
-            <p>object declaration syntax</p>
-            <pre><code class="language-js">const obj = {
-  key: value,
-  // ...
-};
-</code></pre>
-          </li>
-          <li>
-            <p>iteration syntax (for x in y loop, but for arrays)</p>
-            <pre><code class="language-js">for (declaration of iterable) {
-  // ...
+        <p>i can’t really think of anything to say so here’s a code snippet</p>
+        <pre><code class="language-js">var elements = document.getElementsByTagName(&quot;li&quot;);
+
+for (var i = 0; i &lt; elements.length; i++) {
+  if (elements[i].classList.contains(&quot;uh&quot;)) {
+    elements[i].className = &quot;yea&quot;;
+    break;
+  }
 }
 </code></pre>
-          </li>
-          <li>
-            <p>functions returning themselves as objects</p>
-            <pre><code class="language-js">function Greeting(name) {
-  this.name = name;
-  this.greet = function() {
-    console.log(`Hello, ${this.name}!`);
-  };
-}
-</code></pre>
-          </li>
-          <li>
-            <p>
-              reminder that <code>\n</code> will only work if printing to
-              console (i think), else use <code>&lt;br&gt;</code>
-            </p>
-          </li>
-        </ul>
         <p>
-          …since the basics were learn’t last week anyways, this week yields a
-          relatively short post compared to the last.
+          waow so cool (real submission code btw)<br />
+          also cher i am def doing my assignment 1 dont worry
         </p>
-        <p>au revoir!</p>
         <p>
           <img
-            src="https://files.catbox.moe/konjj4.jpg"
-            alt="dog head on penguin image"
+            src="https://files.catbox.moe/yatn2f.jpg"
+            alt="a reactionary image"
           />
         </p>
       </section>
