@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Week 08</title>
-    <meta name="title" content="Week 08" />
-    <meta name="description" content="but MUST we use jquery" />
+    <title>Week 07</title>
+    <meta name="title" content="Week 07" />
+    <meta name="description" content="...all hail the dom?" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- style placeholder -->
@@ -77,54 +77,34 @@
 
     <main>
       <header>
-        <h2>but MUST we use jquery</h2>
-        <p>Week 08</p>
+        <h2>…all hail the dom?</h2>
+        <p>Week 07</p>
       </header>
       <section id="s1">
-        <p>it’s week 8!</p>
+        <p>i did not expect this week to only have one activity, huh.</p>
         <p>
-          APIs, cool stuff. Honestly I didn’t know Postman being free as long as
-          you skip logging in and just use it as a client.<br />
-          Had I known about this earlier, I wouldn’t had to prod around in the
-          Python REPL manhandling <code>requests</code> while I was making
-          <a href="https://github.com/markjoshwel/nuko">nuko</a>.<br />
-          (I should probably get back to working on it one of these days…)
+          Anyways, DOM Manipulation! Cool stuff. Wonder how much of it
+          frameworks like React and the like abstract it away.
         </p>
-        <p>
-          I’ve worked with data.gov.sg’s APIs before, and their documentation
-          <em>definitely</em> needs some polish, but alas here I am with work
-          completed nonetheless.
-        </p>
-        <p>
-          JQuery is cool and all but I hate JavaScript so I’d rather not use
-          it.<br />
-          (unless the assignment requires it, which the first one does so i used
-          it &gt;:3)
-        </p>
-        <p>
-          I mean, you can just add an event listener to the element, but
-          whatever.
-        </p>
-        <pre><code class="language-js">// jquery-ful
-$(document).ready(function(){
-  $(&quot;#btn&quot;).click(function(){
-    getRandomUser();
-  });
-});
+        <p>i can’t really think of anything to say so here’s a code snippet</p>
+        <pre><code class="language-js">var elements = document.getElementsByTagName(&quot;li&quot;);
 
-// jquery-less
-document.getElementById(&quot;btnSubmit&quot;).addEventListener(&quot;click&quot;, handleBtnSubmitClick);
+for (var i = 0; i &lt; elements.length; i++) {
+  if (elements[i].classList.contains(&quot;uh&quot;)) {
+    elements[i].className = &quot;yea&quot;;
+    break;
+  }
+}
 </code></pre>
-        <p>whatever.</p>
+        <p>
+          waow so cool (real submission code btw)<br />
+          also cher i am def doing my assignment 1 dont worry
+        </p>
         <p>
           <img
-            src="./assets/wk8-mfw-no-3hr-psi.png"
-            alt="mfw no three hour psi"
+            src="https://files.catbox.moe/yatn2f.jpg"
+            alt="a reactionary image"
           />
-        </p>
-        <p>
-          also mfw no three hour psi in data.gov.sg’s api response even when the
-          api docs say it’s there ╯°□°）╯︵ ┻━┻
         </p>
       </section>
     </main>

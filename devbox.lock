@@ -20,7 +20,7 @@
     },
     "poetry@latest": {
       "last_modified": "2023-10-11T07:26:37Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/01441e14af5e29c9d27ace398e6dd0b293e25a54#poetry",
       "source": "devbox-search",
       "version": "1.6.1",
@@ -41,7 +41,7 @@
     },
     "python@latest": {
       "last_modified": "2023-10-03T09:29:46Z",
-      "plugin_version": "0.0.1",
+      "plugin_version": "0.0.3",
       "resolved": "github:NixOS/nixpkgs/e2b8feae8470705c3f331901ae057da3095cea10#python312",
       "source": "devbox-search",
       "version": "3.12.0",
