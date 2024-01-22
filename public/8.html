@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Week 14</title>
-    <meta name="title" content="Week 14" />
-    <meta name="description" content="lottie lottie lottie" />
+    <title>Week 08</title>
+    <meta name="title" content="Week 08" />
+    <meta name="description" content="but MUST we use jquery" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- style placeholder -->
@@ -83,32 +83,55 @@
 
     <main>
       <header>
-        <h2>lottie lottie lottie</h2>
-        <p>Week 14</p>
+        <h2>but MUST we use jquery</h2>
+        <p>Week 08</p>
       </header>
       <section id="s1">
+        <p>it’s week 8!</p>
+        <p>
+          APIs, cool stuff. Honestly I didn’t know Postman being free as long as
+          you skip logging in and just use it as a client.<br />
+          Had I known about this earlier, I wouldn’t had to prod around in the
+          Python REPL manhandling <code>requests</code> while I was making
+          <a href="https://github.com/markjoshwel/nuko">nuko</a>.<br />
+          (I should probably get back to working on it one of these days…)
+        </p>
+        <p>
+          I’ve worked with data.gov.sg’s APIs before, and their documentation
+          <em>definitely</em> needs some polish, but alas here I am with work
+          completed nonetheless.
+        </p>
+        <p>
+          JQuery is cool and all but I hate JavaScript so I’d rather not use
+          it.<br />
+          (unless the assignment requires it, which the first one does so i used
+          it &gt;:3)
+        </p>
+        <p>
+          I mean, you can just add an event listener to the element, but
+          whatever.
+        </p>
+        <pre><code class="language-js">// jquery-ful
+$(document).ready(function(){
+  $(&quot;#btn&quot;).click(function(){
+    getRandomUser();
+  });
+});
+
+// jquery-less
+document.getElementById(&quot;btnSubmit&quot;).addEventListener(&quot;click&quot;, handleBtnSubmitClick);
+</code></pre>
+        <p>whatever.</p>
         <p>
           <img
-            src="https://files.catbox.moe/3i518z.png"
-            alt="lotte from parallel world pharmacy/isekai yakkyoku"
+            src="./assets/wk8-mfw-no-3hr-psi.png"
+            alt="mfw no three hour psi"
           />
         </p>
-        <p>I had my doubts, but Lottie animations are cool.</p>
         <p>
-          I almost used a second library for interactivity, but I just read the
-          docs, and turns out to always start an animation when a button is
-          clicked, you can just <code>seek()</code> the player to the beginning,
-          or 0.
+          also mfw no three hour psi in data.gov.sg’s api response even when the
+          api docs say it’s there ╯°□°）╯︵ ┻━┻
         </p>
-        <pre><code class="language-js">const lottie = document.querySelector(&quot;dotlottie-player&quot;);
-
-const button = document.querySelector(&quot;button&quot;);
-button.addEventListener(&quot;click&quot;, () =&gt; {
-  lottie.seek(0);
-  lottie.play();
-});
-</code></pre>
-        <p>neat!</p>
       </section>
     </main>
 
